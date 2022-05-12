@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super-Heroes</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
+      </style>
+      
+  </head>
+  <body class="h-screen bg-gray-100">
+    <div class="w-full h-screen">
+      <div class="w-3/5 mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 my-8 mt-24 h-a overscroll-y-contain no-scrollbar">
+        <div class="header flex justify-between mb-8">
+          <h1 class="text-2xl text-black-500 hover:text-black-500 transition duration-500">Super-Heroes </h1>
+        </div>
+        <form class="space-y-4 text-gray-700">
+          <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0">
+          </div>
+          <div class="row">
+            <div class="column">
+               <img src="https://blog.hubspot.com/hubfs/Customer-testimonial-page.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+               <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_481292845_77896.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1509670572852-5823184def8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8MTcyOTI1OHx8ZW58MHx8fHw%3D&w=1000&q=80" alt="Forest" style="width:100%">
+            </div>
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn"> </i> Load More</a>
+              <a href="index.html" class="btn"> </i> Go Back</a>
+            </div>
+         </form>
+        </div>
+    </div>
+  </body>
+</html>
